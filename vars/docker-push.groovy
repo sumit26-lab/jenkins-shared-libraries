@@ -7,7 +7,7 @@ def call(String dockerhubUser, String ProjectName,ImageTage){
                 sh "docker login -u ${env.DOCKER_HUB_USER} -p ${env.DOCKER_HUB_PASS}"
                 // create image tage
           
-                sh "docker push ${env.DOCKER_HUB_USER}/${ProjectName}:${ImageTage}
+                sh "docker push ${env.DOCKER_HUB_USER}/${ProjectName}:${ImageTage}"
                 echo "image on push docker hub"
                 
                 }
