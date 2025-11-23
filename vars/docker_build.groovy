@@ -1,4 +1,4 @@
-def (String DockerHubUser,String ProjectName,String ImageTage){
+def call(String DockerHubUser,String ProjectName,String ImageTage){
       echo "image tage process Start"
      echo "DockerHubUser = ${DockerHubUser}"
      echo "ProjectName = ${ProjectName}"
